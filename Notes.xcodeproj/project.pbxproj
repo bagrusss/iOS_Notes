@@ -14,6 +14,9 @@
 		E0A28A1D22C905DF00E1A250 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A28A1B22C905DF00E1A250 /* LaunchScreen.storyboard */; };
 		E0A28A2822C905DF00E1A250 /* NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A28A2722C905DF00E1A250 /* NotesTests.swift */; };
 		E0A28A3322C905DF00E1A250 /* NotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A28A3222C905DF00E1A250 /* NotesUITests.swift */; };
+		E0A28A4722C90BE700E1A250 /* FileNotebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A28A4622C90BE700E1A250 /* FileNotebook.swift */; };
+		E0A28A4922C90D5D00E1A250 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A28A4422C9085500E1A250 /* Note.swift */; };
+		E0A28A4D22C92EF900E1A250 /* NoteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A28A4C22C92EF900E1A250 /* NoteExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		E0A28A2E22C905DF00E1A250 /* NotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A28A3222C905DF00E1A250 /* NotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesUITests.swift; sourceTree = "<group>"; };
 		E0A28A3422C905DF00E1A250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0A28A4422C9085500E1A250 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		E0A28A4622C90BE700E1A250 /* FileNotebook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileNotebook.swift; sourceTree = "<group>"; };
+		E0A28A4C22C92EF900E1A250 /* NoteExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 		E0A28A1122C905DD00E1A250 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				E0A28A4122C9080000E1A250 /* Model */,
+				E0A28A4022C906EB00E1A250 /* screens */,
 				E0A28A1222C905DD00E1A250 /* AppDelegate.swift */,
 				E0A28A1422C905DD00E1A250 /* ViewController.swift */,
 				E0A28A1622C905DD00E1A250 /* Main.storyboard */,
@@ -123,6 +131,23 @@
 				E0A28A3422C905DF00E1A250 /* Info.plist */,
 			);
 			path = NotesUITests;
+			sourceTree = "<group>";
+		};
+		E0A28A4022C906EB00E1A250 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		E0A28A4122C9080000E1A250 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0A28A4622C90BE700E1A250 /* FileNotebook.swift */,
+				E0A28A4C22C92EF900E1A250 /* NoteExtension.swift */,
+				E0A28A4422C9085500E1A250 /* Note.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A28A4D22C92EF900E1A250 /* NoteExtension.swift in Sources */,
+				E0A28A4722C90BE700E1A250 /* FileNotebook.swift in Sources */,
 				E0A28A1522C905DD00E1A250 /* ViewController.swift in Sources */,
 				E0A28A1322C905DD00E1A250 /* AppDelegate.swift in Sources */,
+				E0A28A4922C90D5D00E1A250 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
