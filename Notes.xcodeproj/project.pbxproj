@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E0476B7222D24A59005192A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0476B7122D24A59005192A0 /* LaunchScreen.storyboard */; };
+		E0476B7422D27075005192A0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E0476B7322D27075005192A0 /* .gitignore */; };
 		E0A28A1322C905DD00E1A250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A28A1222C905DD00E1A250 /* AppDelegate.swift */; };
 		E0A28A1522C905DD00E1A250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A28A1422C905DD00E1A250 /* ViewController.swift */; };
 		E0A28A1822C905DD00E1A250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A28A1622C905DD00E1A250 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		E0476B7122D24A59005192A0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0476B7322D27075005192A0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E0A28A0F22C905DD00E1A250 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A28A1222C905DD00E1A250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0A28A1422C905DD00E1A250 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		E0A28A0622C905DD00E1A250 = {
 			isa = PBXGroup;
 			children = (
+				E0476B7322D27075005192A0 /* .gitignore */,
 				E0A28A1122C905DD00E1A250 /* Notes */,
 				E0A28A2622C905DF00E1A250 /* NotesTests */,
 				E0A28A3122C905DF00E1A250 /* NotesUITests */,
@@ -246,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0476B7422D27075005192A0 /* .gitignore in Resources */,
 				E0A28A1A22C905DF00E1A250 /* Assets.xcassets in Resources */,
 				E0476B7222D24A59005192A0 /* LaunchScreen.storyboard in Resources */,
 				E0A28A1822C905DD00E1A250 /* Main.storyboard in Resources */,
@@ -446,7 +450,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 937CFWU8SC;
 				INFOPLIST_FILE = Notes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,7 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 937CFWU8SC;
 				INFOPLIST_FILE = Notes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
