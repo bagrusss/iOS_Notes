@@ -1,0 +1,5 @@
+Отдельный QA config сборки для тестировщиков - за основу взят релиз
+
+Enable testability - возможность тестирования
+Swift compiler custom flags
+    -- QA debug

@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>QA_Notes.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E0A28A0E22C905DD00E1A250</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E0A28A2222C905DF00E1A250</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E0A28A2D22C905DF00E1A250</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
