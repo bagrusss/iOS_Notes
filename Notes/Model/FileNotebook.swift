@@ -32,7 +32,7 @@ public class FileNotebook {
     public func saveToFile() {
         let fileManager = FileManager.default
         let path = filePath(fileManager)
-
+        
         var isDir: ObjCBool = false
         if !fileManager.fileExists(atPath: path.path, isDirectory: &isDir) {
             fileManager.createFile(atPath: path.path, contents: nil, attributes: nil)

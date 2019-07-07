@@ -1,13 +1,13 @@
 import UIKit
 
 public struct Note {
-
+    
     enum Importance: Int {
         case ordinary = 0
         case veryImportant
         case notImportrant
     }
-
+    
     let uid: String
     let title: String
     let content: String
