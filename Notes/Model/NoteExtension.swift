@@ -38,7 +38,8 @@ extension Note {
             let uid = json["uid"] as? String
             else {
                 return nil
-            }
+        }
+        
         let importance = json["importance"] as? Int
         let importanceEnum = Note.Importance(rawValue: importance ?? 0) ?? Note.Importance.ordinary
         

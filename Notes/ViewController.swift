@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Notes
 //
-//  Created by Vladislav Kozhushko on 30/06/2019.
+//  Created by bagrusss on 30/06/2019.
 //  Copyright © 2019 bagrusss. All rights reserved.
 //
 
