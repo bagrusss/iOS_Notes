@@ -32,35 +32,38 @@ extension Note {
     }
     
     static func parse(json: [String: Any]) -> Note? {
-        do {
-            let importance = try (json["importance"] as? Int)
-            let importanceEnum = Note.Importance(rawValue: importance ?? 0) ?? Note.Importance.ordinary
-            
-            var uiColor: UIColor
-            if let color = json["color"] {
-                uiColor = try (color as! Int).toUIColor()
-            } else {
-                uiColor = UIColor.white
+        guard
+            let title = json["title"] as? String,
+            let content = json["content"] as? String,
+            let uid = json["uid"] as? String
+            else {
+                return nil
             }
-            
-            let selfDestructionDate: Date?
-            if let date = json["selfDestructionDate"] {
-                selfDestructionDate = Date(timeIntervalSince1970: try date as! Double)
-            } else {
-                selfDestructionDate = nil
-            }
-            
-            return Note(
-                uid: try (json["uid"] as! String),
-                title: try (json["title"] as! String),
-                content: try (json["content"] as! String),
-                color: uiColor,
-                importance: importanceEnum,
-                selfDestructionDate: selfDestructionDate
-            )
-        } catch {
-            return nil
+        let importance = json["importance"] as? Int
+        let importanceEnum = Note.Importance(rawValue: importance ?? 0) ?? Note.Importance.ordinary
+        
+        var uiColor: UIColor
+        if let color = json["color"] as? Int {
+            uiColor = color.toUIColor()
+        } else {
+            uiColor = UIColor.white
         }
+        
+        let selfDestructionDate: Date?
+        if let date = json["selfDestructionDate"] as? Double {
+            selfDestructionDate = Date(timeIntervalSince1970: date)
+        } else {
+            selfDestructionDate = nil
+        }
+        
+        return Note(
+            uid: uid,
+            title: title,
+            content: content,
+            color: uiColor,
+            importance: importanceEnum,
+            selfDestructionDate: selfDestructionDate
+        )
     }
 }
 
@@ -77,7 +80,7 @@ extension UIColor {
         let green = Int(fGreen * 255.0)
         let blue = Int(fBlue * 255.0)
         let alpha = Int(fAlpha * 255.0)
-            
+        
         let rgb = (alpha << 24) + (red << 16) + (green << 8) + blue
         return rgb
     }
