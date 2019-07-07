@@ -3,15 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0476B7222D24A59005192A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0476B7122D24A59005192A0 /* LaunchScreen.storyboard */; };
 		E0A28A1322C905DD00E1A250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A28A1222C905DD00E1A250 /* AppDelegate.swift */; };
 		E0A28A1522C905DD00E1A250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A28A1422C905DD00E1A250 /* ViewController.swift */; };
 		E0A28A1822C905DD00E1A250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A28A1622C905DD00E1A250 /* Main.storyboard */; };
 		E0A28A1A22C905DF00E1A250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0A28A1922C905DF00E1A250 /* Assets.xcassets */; };
-		E0A28A1D22C905DF00E1A250 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A28A1B22C905DF00E1A250 /* LaunchScreen.storyboard */; };
 		E0A28A2822C905DF00E1A250 /* NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A28A2722C905DF00E1A250 /* NotesTests.swift */; };
 		E0A28A3322C905DF00E1A250 /* NotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A28A3222C905DF00E1A250 /* NotesUITests.swift */; };
 		E0A28A4722C90BE700E1A250 /* FileNotebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A28A4622C90BE700E1A250 /* FileNotebook.swift */; };
@@ -37,12 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E0476B7122D24A59005192A0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0A28A0F22C905DD00E1A250 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A28A1222C905DD00E1A250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0A28A1422C905DD00E1A250 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E0A28A1722C905DD00E1A250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0A28A1922C905DF00E1A250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E0A28A1C22C905DF00E1A250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0A28A1E22C905DF00E1A250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0A28A2322C905DF00E1A250 /* NotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A28A2722C905DF00E1A250 /* NotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTests.swift; sourceTree = "<group>"; };
@@ -104,13 +104,12 @@
 			isa = PBXGroup;
 			children = (
 				E0A28A4122C9080000E1A250 /* Model */,
-				E0A28A4022C906EB00E1A250 /* screens */,
 				E0A28A1222C905DD00E1A250 /* AppDelegate.swift */,
 				E0A28A1422C905DD00E1A250 /* ViewController.swift */,
 				E0A28A1622C905DD00E1A250 /* Main.storyboard */,
 				E0A28A1922C905DF00E1A250 /* Assets.xcassets */,
-				E0A28A1B22C905DF00E1A250 /* LaunchScreen.storyboard */,
 				E0A28A1E22C905DF00E1A250 /* Info.plist */,
+				E0476B7122D24A59005192A0 /* LaunchScreen.storyboard */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -131,13 +130,6 @@
 				E0A28A3422C905DF00E1A250 /* Info.plist */,
 			);
 			path = NotesUITests;
-			sourceTree = "<group>";
-		};
-		E0A28A4022C906EB00E1A250 /* screens */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = screens;
 			sourceTree = "<group>";
 		};
 		E0A28A4122C9080000E1A250 /* Model */ = {
@@ -230,7 +222,7 @@
 				};
 			};
 			buildConfigurationList = E0A28A0A22C905DD00E1A250 /* Build configuration list for PBXProject "Notes" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -254,8 +246,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0A28A1D22C905DF00E1A250 /* LaunchScreen.storyboard in Resources */,
 				E0A28A1A22C905DF00E1A250 /* Assets.xcassets in Resources */,
+				E0476B7222D24A59005192A0 /* LaunchScreen.storyboard in Resources */,
 				E0A28A1822C905DD00E1A250 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,14 +319,6 @@
 				E0A28A1722C905DD00E1A250 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E0A28A1B22C905DF00E1A250 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E0A28A1C22C905DF00E1A250 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -460,7 +444,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Notes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,8 +454,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.bagrusss.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -477,7 +464,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Notes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -485,8 +474,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.bagrusss.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
