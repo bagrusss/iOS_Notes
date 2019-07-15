@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,71 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Notes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jpk-GU-6Zf">
+                                <rect key="frame" x="16" y="52" width="382" height="810"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyc-DT-fxs">
+                                        <rect key="frame" x="0.0" y="38" width="382" height="146"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="146" id="ZZg-fn-J7y"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
+                                    </textView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lwZ-43-EJQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use destroy date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEi-44-rMV">
+                                        <rect key="frame" x="0.0" y="200" width="182" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5Ph-IL-4nd">
+                                        <rect key="frame" x="198" y="199" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="top" secondItem="lwZ-43-EJQ" secondAttribute="bottom" constant="-30" id="49t-NI-Sjg"/>
+                                    <constraint firstItem="vyc-DT-fxs" firstAttribute="top" secondItem="lwZ-43-EJQ" secondAttribute="bottom" constant="8" id="Et7-VW-pLC"/>
+                                    <constraint firstItem="vyc-DT-fxs" firstAttribute="leading" secondItem="jpk-GU-6Zf" secondAttribute="leading" id="PFt-ba-cSe"/>
+                                    <constraint firstItem="5Ph-IL-4nd" firstAttribute="centerY" secondItem="iEi-44-rMV" secondAttribute="centerY" id="S0c-FH-bp9"/>
+                                    <constraint firstItem="lwZ-43-EJQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vyc-DT-fxs" secondAttribute="leading" id="STp-B1-U9O"/>
+                                    <constraint firstItem="iEi-44-rMV" firstAttribute="top" secondItem="vyc-DT-fxs" secondAttribute="bottom" constant="16" id="Zlg-9H-Ms7"/>
+                                    <constraint firstItem="vyc-DT-fxs" firstAttribute="width" secondItem="jpk-GU-6Zf" secondAttribute="width" id="c6J-Dd-mQo"/>
+                                    <constraint firstItem="lwZ-43-EJQ" firstAttribute="width" secondItem="jpk-GU-6Zf" secondAttribute="width" id="erL-7C-jDG"/>
+                                    <constraint firstAttribute="bottom" secondItem="vyc-DT-fxs" secondAttribute="bottom" constant="618" id="lpb-7g-rOO"/>
+                                    <constraint firstAttribute="trailing" secondItem="lwZ-43-EJQ" secondAttribute="trailing" id="lqv-8p-709"/>
+                                    <constraint firstItem="5Ph-IL-4nd" firstAttribute="centerY" secondItem="iEi-44-rMV" secondAttribute="centerY" id="nfC-4K-N56"/>
+                                    <constraint firstItem="5Ph-IL-4nd" firstAttribute="leading" secondItem="iEi-44-rMV" secondAttribute="trailing" constant="16" id="t4x-UQ-XB0"/>
+                                    <constraint firstAttribute="trailing" secondItem="vyc-DT-fxs" secondAttribute="trailing" id="um1-1z-dYh"/>
+                                    <constraint firstItem="iEi-44-rMV" firstAttribute="leading" secondItem="jpk-GU-6Zf" secondAttribute="leading" id="vxy-Dl-Yxu"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jpk-GU-6Zf" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="12i-5N-jMD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jpk-GU-6Zf" secondAttribute="trailing" constant="16" id="cDK-f5-kzr"/>
+                            <constraint firstItem="jpk-GU-6Zf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="f9Y-yt-fzL"/>
+                            <constraint firstItem="jpk-GU-6Zf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xDR-kv-zG1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-172.46376811594203" y="51.5625"/>
         </scene>
     </scenes>
 </document>
